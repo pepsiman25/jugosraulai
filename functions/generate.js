@@ -6,7 +6,7 @@ export async function onRequestPost(context) {
   
   if (contextParam && contextParam.trim() !== "") {
   prompt += ` Toma "${contextParam}" con mucha consideración.`;
-
+  }
   // Workers AI
   const response = await fetch(
     `https://api.cloudflare.com/client/v4/accounts/${context.env.CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b`,
@@ -42,5 +42,4 @@ export async function onRequestPost(context) {
   }), {
     headers: { "Content-Type": "application/json" }
   });
-}
 }
