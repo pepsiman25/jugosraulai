@@ -2,22 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AI Prompt Generator</title>
+  
+  <title>Jugos AI</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <h1>Jugos AI de ___</h1>
+  <div class="container">
 
-  <label>Necesidad que completa el jugo:</label><br>
-  <input id="jugo" type="text" placeholder="Lo que te hace falta..." /><br><br>
+    <h1>Jugos AI de ___</h1>
 
-  <label>Condición médica/Medicamentos:</label><br>
-  <input id="enfermedad" type="text" placeholder="Lo que tienes..." /><br><br>
+    <label>Necesidad que completa el jugo:</label><br>
+    <input id="jugo" type="text" placeholder="Lo que te hace falta..." /><br><br>
 
-  <button onclick="runAI()">Generate</button>
+    <label>Condición médica/Medicamentos:</label><br>
+    <input id="enfermedad" type="text" placeholder="Lo que tienes..." /><br><br>
 
-  <h3>Result:</h3>
-  <pre id="output"></pre>
+    <button onclick="runAI()">Generate</button>
+
+    <h3>Resultado:</h3>
+    <pre id="output"></pre>
+
+  </div>
 
   <script src="main.js"></script>
 </body>
