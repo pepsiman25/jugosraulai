@@ -71,6 +71,10 @@ button:hover {
   100% { transform: rotate(360deg); }
 }
 
+#spinner {
+  display: block !important;
+}
+
 pre {
   white-space: pre-wrap;
   background: #f4f4f4;
