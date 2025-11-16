@@ -8,7 +8,7 @@ export async function onRequestPost(context) {
 
   // Workers AI: Llama 3 - 8B Instruct (FREE)
   const response = await fetch(
-    `https://api.cloudflare.com/client/v4/accounts/${context.env.CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/meta/llama-3-8b-instruct`,
+    `https://api.cloudflare.com/client/v4/accounts/${context.env.CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b`,
     {
       method: "POST",
       headers: {
