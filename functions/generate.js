@@ -31,16 +31,14 @@ export async function onRequestPost(context) {
     }
   );
 
-  const data = await response.json();
+  const data = await response.json(); 
   
-  const regexPattern = /<think>[\s\S]*?<\/think>\n\n/g;
-      return deepSeekOutput.replace(regexPattern, '');
-    
+  // Remove any <think> that leaks
+  let output = data.result.response || "";
+  output = output.replace(/<think>[\s\S]*?<\/think>/gi, "").trim();
 
-  // Workers AI puts output text at result.response
-  return new Response(JSON.stringify({
-    output_text: data.result.response
-  }), {
-    headers: { "Content-Type": "application/json" }
-  });
+  return new Response(
+    JSON.stringify({ output_text: output }),
+    { headers: { "Content-Type": "application/json" } }
+  );
 }
