@@ -19,7 +19,7 @@ export async function onRequestPost(context) {
       body: JSON.stringify({
         messages: [
           { role: "system", content: "Eres un doctor experto en nutrición." + 
-              "RESPONDE ÚNICAMENTE con la respuesta final. " +
+              "RESPONDE ÚNICAMENTE con la respuesta final, agregando detalles como medidas, receta y demás. " +
               "NO incluyas <think>, pensamientos, procesos internos ni explicaciones." 
            },
           { role: "user", content: prompt }
