@@ -13,7 +13,7 @@ async function runAI() {
    document.getElementById("spinner").classList.add("hidden");
 
 
-  document.getElementById("output").textContent =
-    data.output_text || JSON.stringify(data, null, 2);
+ document.getElementById("output").innerHTML =
+marked.parse(data.output_text) || JSON.stringify(data, null, 2);
 
 }
