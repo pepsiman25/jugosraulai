@@ -1,11 +1,11 @@
 async function runAI() {
-  const goal = document.getElementById("goal").value;
-  const contextParam = document.getElementById("contextParam").value;
+  const jugo = document.getElementById("jugo").value;
+  const enfermedad = document.getElementById("enfermedad").value;
 
   const response = await fetch("/generate", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ goal, contextParam })
+    body: JSON.stringify({ jugo, enfermedad })
   });
 
   const data = await response.json();

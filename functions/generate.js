@@ -1,11 +1,11 @@
 export async function onRequestPost(context) {
-  const { goal, contextParam } = await context.request.json();
+  const { jugo, enfermedad } = await context.request.json();
 
-  let prompt = `Escribe una receta breve de jugo natural para "${goal}".
+  let prompt = `Escribe una receta breve de jugo natural para "${jugo}".
   `.trim();
   
-  if (contextParam && contextParam.trim() !== "") {
-  prompt += ` Toma "${contextParam}" con mucha consideración.`;
+  if (enfermedad && enfermedad.trim() !== "") {
+  prompt += ` Toma "${enfermedad}" con mucha consideración.`;
   }
   // Workers AI
   const response = await fetch(
