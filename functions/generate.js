@@ -2,7 +2,7 @@ export async function onRequestPost(context) {
   const { goal, contextParam } = await context.request.json();
 
   const prompt = `
-  Escribe una receta breve de jugo natural para "${necesidad}".
+  Escribe una receta breve de jugo natural para "${goal}".
   Toma "${contextParam}" con mucha consideración.
   `.trim();
 
