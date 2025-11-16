@@ -3,7 +3,7 @@ async function runAI() {
   const contextParam = document.getElementById("contextParam").value;
 
   const response = await fetch("/generate", {
-    
+    method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ goal, contextParam })
   });
