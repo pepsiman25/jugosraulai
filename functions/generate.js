@@ -33,8 +33,9 @@ export async function onRequestPost(context) {
 
   const data = await response.json();
   
-  let output = data.result.response || "";
-  output = output.replace(/<think>[\s\S]*?<\/think>/gi, "").trim();
+  const regexPattern = /<think>[\s\S]*?<\/think>\n\n/g;
+      return deepSeekOutput.replace(regexPattern, '');
+    
 
   // Workers AI puts output text at result.response
   return new Response(JSON.stringify({
