@@ -2,8 +2,8 @@ export async function onRequestPost(context) {
   const { goal, contextParam } = await context.request.json();
 
   const prompt = `
-  Write something for "${goal}".
-  Take "${contextParam}" into consideration.
+  Escribe una receta breve de jugo natural para "${necesidad}".
+  Toma "${contextParam}" con mucha consideración.
   `.trim();
 
   // Workers AI: Llama 3 - 8B Instruct (FREE)
@@ -19,7 +19,9 @@ export async function onRequestPost(context) {
         messages: [
           { role: "system", content: "You are a helpful assistant." },
           { role: "user", content: prompt }
-        ]
+        ],
+        max_tokens: 1000,
+        temperature: 0.7
       })
     }
   );
