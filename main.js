@@ -13,6 +13,7 @@ async function runAI() {
   document.getElementById("output").textContent =
     data.output_text || JSON.stringify(data, null, 2);
 
+  const form = document.querySelector("form");
   const output = document.getElementById("output");
   const spinner = document.getElementById("spinner");
 
