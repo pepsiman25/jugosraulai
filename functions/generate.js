@@ -17,10 +17,11 @@ export async function onRequestPost(context) {
       },
       body: JSON.stringify({
         messages: [
-          { role: "system", content: "You are a helpful assistant." },
+          { role: "system", content: "Eres un doctor experto en nutrición." },
           { role: "user", content: prompt }
         ],
         max_tokens: 1000,
+        skip_thinking: true,
         temperature: 0.7
       })
     }
