@@ -1,12 +1,13 @@
 export async function onRequestPost(context) {
   const { goal, contextParam } = await context.request.json();
 
-  const prompt = `
-  Escribe una receta breve de jugo natural para "${goal}".
-  Toma "${contextParam}" con mucha consideración.
+  let prompt = `Escribe una receta breve de jugo natural para "${goal}".
   `.trim();
+  
+  if (contextParam && contextParam.trim() !== "") {
+  prompt += ` Toma "${contextParam}" con mucha consideración.`;
 
-  // Workers AI: Llama 3 - 8B Instruct (FREE)
+  // Workers AI
   const response = await fetch(
     `https://api.cloudflare.com/client/v4/accounts/${context.env.CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b`,
     {
@@ -17,7 +18,10 @@ export async function onRequestPost(context) {
       },
       body: JSON.stringify({
         messages: [
-          { role: "system", content: "Eres un doctor experto en nutrición." },
+          { role: "system", content: "Eres un doctor experto en nutrición." + 
+              "RESPONDE ÚNICAMENTE con la respuesta final. " +
+              "NO incluyas <think>, pensamientos, procesos internos ni explicaciones." 
+           },
           { role: "user", content: prompt }
         ],
         max_tokens: 1000,
@@ -38,4 +42,5 @@ export async function onRequestPost(context) {
   }), {
     headers: { "Content-Type": "application/json" }
   });
+}
 }
