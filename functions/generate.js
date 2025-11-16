@@ -28,6 +28,9 @@ export async function onRequestPost(context) {
   );
 
   const data = await response.json();
+  
+  let output = data.result.response || "";
+  output = output.replace(/<think>[\s\S]*?<\/think>/gi, "").trim();
 
   // Workers AI puts output text at result.response
   return new Response(JSON.stringify({
