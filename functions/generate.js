@@ -1,7 +1,7 @@
 export async function onRequestPost(context) {
   const { jugo, enfermedad } = await context.request.json();
 
-  let prompt = `Considerando las siguientes recetas, cual es la mas apropiada para el tema "${jugo}"?.
+  let prompt = `En español, considerando las siguientes recetas, cual es la mas apropiada para el tema "${jugo}"?.
 1) Batido Energético Antioxidante
 Ingredientes (1 porción):
 Fresa: 100 g
@@ -46,14 +46,17 @@ Energía: 140 kcal
 Vitamina A: 80 µg → 9–10% VD
 Vitamina C: 70 mg → 78% VD
 Fibra: 4 g → 14% VD
+
+Incluye la receta entera nuevamente.
   `.trim();
+  
   
   if (enfermedad && enfermedad.trim() !== "") {
   prompt += ` Toma "${enfermedad}" con mucha consideración.`;
   }
   // Workers AI
   const response = await fetch(
-    `https://api.cloudflare.com/client/v4/accounts/${context.env.CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b`,
+    `https://api.cloudflare.com/client/v4/accounts/${context.env.CLOUDFLARE_ACCOUNT_ID}/ai/run/@cf/meta/llama-3.2-3b-instruct`,
     {
       method: "POST",
       headers: {
