@@ -1,7 +1,7 @@
 export async function onRequestPost(context) {
   const { jugo, enfermedad } = await context.request.json();
 
-  let prompt = `Escribe una receta breve de jugo natural para "${jugo}".
+  let prompt = `Narra una receta br "${jugo}".
   `.trim();
   
   if (enfermedad && enfermedad.trim() !== "") {
@@ -18,9 +18,7 @@ export async function onRequestPost(context) {
       },
       body: JSON.stringify({
         messages: [
-          { role: "system", content: "Eres un doctor experto en nutrición. Responde como un asistente experimentado, procurando la salud del usuario." + 
-              "RESPONDE ÚNICAMENTE con la respuesta final, agregando detalles como medidas, receta y demás. " +
-              "NO incluyas <think>, pensamientos, procesos internos ni explicaciones." 
+          { role: "system", content: "Eres un doctor experto en nutrición. Responde como un asistente experimentado, procurando la salud del usuario."
            },
           { role: "user", content: prompt }
         ],
