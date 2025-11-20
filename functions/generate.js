@@ -49,7 +49,7 @@ Fibra: 4 g → 14% VD
 
 Incluye la receta entera nuevamente.
   `.trim();
-  
+
   
   if (enfermedad && enfermedad.trim() !== "") {
   prompt += ` Toma "${enfermedad}" con mucha consideración.`;
@@ -65,7 +65,7 @@ Incluye la receta entera nuevamente.
       },
       body: JSON.stringify({
         messages: [
-          { role: "system", content: "Eres un doctor experto en nutrición. Responde como un asistente experimentado, procurando la salud del usuario."
+          { role: "system", content: "Eres un doctor experto en nutrición. Responde como un asistente experimentado, procurando la salud del usuario." + "Incluye la receta de cualquier jugo mencionado"
            },
           { role: "user", content: prompt }
         ],
