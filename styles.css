@@ -59,10 +59,15 @@ button:hover {
 }
 
 .title-wrap img {
-  float: right;
   height: 100px;          /* adjust size */
   width: auto;           /* keeps proportions */
 }
+
+.right-img {
+  float: right;
+  margin-left: 10px; /* optional spacing */
+}
+
 .spinner {
   border: 4px solid #eee;
   border-top: 4px solid #4a90e2;
