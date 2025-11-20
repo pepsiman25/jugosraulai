@@ -59,6 +59,7 @@ button:hover {
 }
 
 .title-wrap img {
+  float: right;
   height: 100px;          /* adjust size */
   width: auto;           /* keeps proportions */
 }
