@@ -1,7 +1,7 @@
 export async function onRequestPost(context) {
   const { jugo, enfermedad } = await context.request.json();
 
-  let prompt = `Narra una receta br "${jugo}".
+  let prompt = `En español, Narra una receta que se centre con el tema de "${jugo}".
   `.trim();
   
   if (enfermedad && enfermedad.trim() !== "") {
