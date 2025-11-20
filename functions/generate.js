@@ -2,7 +2,7 @@ export async function onRequestPost(context) {
   const { jugo, enfermedad } = await context.request.json();
 
   let prompt = `En español, considerando las siguientes recetas, cual es la mas apropiada para la necesidad "${jugo}"?.
-🥤 1) Batido Energético Antioxidante
+🥤 1) Full Energy
 Ingredientes (1 porción):
 Fresa: 100 g
 Mora: 80 g
@@ -19,7 +19,7 @@ Vitamina C: ~90 mg → 100% VD
 Fibra: 6 g → 21% VD
 Proteína: 7 g
 Potasio: ~650 mg → 18% VD
-🍊 3) Jugo Refrescante Digestivo (citrus–ginger)
+🍊 3) Fresh Juice
 Ingredientes:
 Naranja: 200 g (2 naranjas)
 Limón: 30 g (1 limón)
@@ -34,7 +34,7 @@ Energía: 110 kcal (con 5 g miel)
 Vitamina C: ~140 mg → 155% VD
 Fibra: 2 g
 Antiinflamatorio natural (jengibre).
-🍃 5) Batido Suave Digestivo Papaya–Manzanilla
+🍃 5) Maximum Hydration
 Ingredientes:
 Papaya: 180 g
 Banana: 60 g
@@ -48,7 +48,7 @@ Energía: 140 kcal
 Vitamina A: 80 µg → 9–10% VD
 Vitamina C: 70 mg → 78% VD
 Fibra: 4 g → 14% VD
-🥭 4) Batido Papaya–Fresa Antiinflamatorio
+🥭 4) Vitamin
 Ingredientes:
 Papaya: 150 g
 Fresa: 100 g
@@ -63,7 +63,7 @@ Vitamina C: ~110 mg → 122% VD
 Fibra: 4.8 g → 17% VD
 Vitamina A: 95 µg → 11% VD
 Potasio: 430 mg → 9% VD
-💜 6) Mora–Banana Power Smoothie
+💜 6) Power Smoothie
 Ingredientes:
 Mora: 120 g
 Banana: 100 g
@@ -78,7 +78,7 @@ Fibra: 6.5 g → 23% VD
 Proteína: 8 g
 Potasio: 720 mg → 20% VD
 Calcio: ~250 mg → 25% VD
-🥭 2) Batido Digestivo Papaya–Avena–Linaza (“Digestión Plus”)
+🥭 2) Digestión Plus
 Ingredientes:
 Papaya picada 1 taza (≈140 g)
 Jugo de naranja natural ½ taza (≈120 ml)
