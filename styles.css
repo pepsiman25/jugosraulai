@@ -40,7 +40,7 @@ button {
   width: 100%;
   margin-top: 20px;
   padding: 14px;
-  background: #c0cc52;
+  background: #e2d626;
   color: white;
   border: none;
   border-radius: 8px;
@@ -49,7 +49,7 @@ button {
 }
 
 button:hover {
-  background: #c0cc52a9;
+  background: #e2d526c4
 }
 
 .title-wrap {
