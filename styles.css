@@ -52,6 +52,17 @@ button:hover {
   background: #c0cc52a9;
 }
 
+.box {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .spinner {
   border: 4px solid #eee;
   border-top: 4px solid #4a90e2;
