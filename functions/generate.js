@@ -24,6 +24,7 @@ export async function onRequestPost(context) {
         ],
         max_tokens: 1000,
         skip_thinking: true,
+        
         temperature: 0.7
       })
     }
