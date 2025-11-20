@@ -106,7 +106,7 @@ Potasio: ~480 mg (10% VD)
 
   
   if (enfermedad && enfermedad.trim() !== "") {
-  prompt += ` Toma "${enfermedad}" con mucha consideración.`;
+  prompt += ` Toma la enfermedad o medicamento "${enfermedad}" con mucha consideración.`;
   }
   // Workers AI
   const response = await fetch(
