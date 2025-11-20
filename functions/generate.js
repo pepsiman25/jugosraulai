@@ -77,6 +77,7 @@ Incluye la receta entera nuevamente.
     }
   );
 
+  
   const data = await response.json(); 
   
   // Remove any <think> that leaks
