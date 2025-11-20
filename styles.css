@@ -59,7 +59,7 @@ button:hover {
 }
 
 .title-wrap img {
-  height: 50px;          /* adjust size */
+  height: 100px;          /* adjust size */
   width: auto;           /* keeps proportions */
 }
 .spinner {
