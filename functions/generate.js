@@ -19,7 +19,7 @@ Vitamina C: ~90 mg → 100% VD
 Fibra: 6 g → 21% VD
 Proteína: 7 g
 Potasio: ~650 mg → 18% VD
-🍊 2) Jugo Refrescante Digestivo (citrus–ginger)
+🍊 3) Jugo Refrescante Digestivo (citrus–ginger)
 Ingredientes:
 Naranja: 200 g (2 naranjas)
 Limón: 30 g (1 limón)
@@ -34,12 +34,11 @@ Energía: 110 kcal (con 5 g miel)
 Vitamina C: ~140 mg → 155% VD
 Fibra: 2 g
 Antiinflamatorio natural (jengibre).
-🍃 3) Batido Suave Digestivo Papaya–Manzanilla
+🍃 5) Batido Suave Digestivo Papaya–Manzanilla
 Ingredientes:
 Papaya: 180 g
 Banana: 60 g
 Manzanilla (infusión concentrada): 150 ml
-Miel o estevia: a gusto
 Jengibre: 3 g (opcional para aumentar digestión)
 ✔ Beneficios
 Ideal para estómago sensible, hidratación y digestión.
@@ -64,7 +63,7 @@ Vitamina C: ~110 mg → 122% VD
 Fibra: 4.8 g → 17% VD
 Vitamina A: 95 µg → 11% VD
 Potasio: 430 mg → 9% VD
-💜 5) Mora–Banana Power Smoothie
+💜 6) Mora–Banana Power Smoothie
 Ingredientes:
 Mora: 120 g
 Banana: 100 g
@@ -79,51 +78,7 @@ Fibra: 6.5 g → 23% VD
 Proteína: 8 g
 Potasio: 720 mg → 20% VD
 Calcio: ~250 mg → 25% VD
-🍃 6) Infusión Fría Manzanilla–Limón–Menta (digestiva)
-Ingredientes:
-Infusión de manzanilla: 250 ml
-Limon: 25 g
-Menta: 6–8 hojas
-Miel/estevia: a gusto
-Hielo opcional
-✔ Beneficios
-Digestiva, relajante, muy baja en calorías, alta en vitamina C.
-Valores nutricionales
-Energía: ~25–35 kcal (si usas miel, 5 g)
-Vitamina C: ~20 mg → 22% VD
-Fibra: 0.5 g
-Sin grasa y muy hidratante.
-🍊 7) Jugo Cítrico con Papaya (alto en vitamina C)
-Ingredientes:
-Naranja: 200 g
-Limón: 20 g
-Papaya: 120 g
-Agua: 100 ml
-Endulzante opcional
-✔ Beneficios
-Multivitamínico natural y digestivo, excelente para inmunidad.
-Valores nutricionales
-Energía: ~155 kcal
-Vitamina C: ~155–165 mg → 170–185% VD
-Fibra: 3.5 g → 12% VD
-Vitamina A: 85 µg → 9% VD
-Potasio: ~480 mg → 10% VD
-🍓 8) Batido Suave Banana–Fresa–Leche
-Ingredientes:
-Banana: 120 g
-Fresa: 80 g
-Leche: 200 ml
-Miel/estevia: a gusto
-✔ Beneficios
-Clásico batido energético + proteína. Ideal para desayuno o pre-entreno.
-Valores nutricionales
-Energía: ~220 kcal
-Vitamina C: 65 mg → 72% VD
-Fibra: 4 g → 14% VD
-Proteína: 7–8 g
-Calcio: 250 mg → 25% VD
-Potasio: 710 mg → 19% VD
-🥭 9) Batido Digestivo Papaya–Avena–Linaza (“Digestión Plus”)
+🥭 2) Batido Digestivo Papaya–Avena–Linaza (“Digestión Plus”)
 Ingredientes:
 Papaya picada 1 taza (≈140 g)
 Jugo de naranja natural ½ taza (≈120 ml)
@@ -147,29 +102,6 @@ Vitamina C: 90 mg (100% VD)
 Vitamina A: 110 µg (12% VD)
 Omega-3 (ALA): ~2.3 g
 Potasio: ~480 mg (10% VD)
-🍓 10) Jugo Antiinflamatorio Papaya–Fresa
-Ingredientes:
-Fresas 1 taza (≈150 g)
-Papaya 1 taza (≈140 g)
-Agua ½ taza (≈120 ml)
-Preparación:
-Colocar las frutas en la licuadora.
-Agregar el agua.
-Licuar hasta textura homogénea.
-Servir de inmediato para conservar antioxidantes.
-Beneficios:
-Mejora digestión y reduce acidez por la papaína de la papaya.
-Rico en antioxidantes y vitamina C para defensas y salud de piel.
-Ayuda a controlar colesterol gracias a fibra y compuestos bioactivos.
-Apoya salud cardiovascular, articular y formación de tejidos.
-Aporta ácido fólico, calcio, magnesio y potasio.
-Valores nutricionales:
-Energía: ~115 kcal
-Vitamina C: 150–160 mg (165–178% VD)
-Fibra: 5–6 g (18–21% VD)
-Vitamina A: 75–80 µg (8–9% VD)
-Potasio: ~500 mg (11% VD)
-Incluye la receta entera nuevamente.
   `.trim();
 
   
